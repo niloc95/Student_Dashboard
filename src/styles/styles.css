@@ -1,0 +1,211 @@
+/* Fonts */
+@font-face {
+    font-family: 'Avenir-Next';
+    src:
+        url('/src/fonts/Avenir-Heavy.ttf') format('ttf'),
+        url('/src/fonts/Avenir-Light.ttf') format('ttf'),
+        url('/src/fonts/Avenir-Light.ttf') format('ttf'),
+        url('/src/fonts/Avenir-Medium.ttf') format('ttf');
+    }
+
+/* End Fonts */
+
+:root {
+    --hyperiondev-orange: #ee572a;     /* Primary color */
+    --hyperiondev-text_light_grey: #bdbdbd;     /* Secondary color */
+    --hyperiondev-text_dark_grey: #919191;     /* Secondary color */
+    
+  }
+
+
+body, html {
+    height: 100%;
+    display: block;
+    content: '';
+    background-color: #f0f0f0;
+    height: 60px;
+}
+
+.btn-tht {
+    color: var(--hyperiondev-orange);
+    font-family: 'Avenir-Next', sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.75rem, 0.625rem + 0.4vw, 0.875rem);
+    border-color: var(--hyperiondev-orange);
+}
+
+.btn-tht:hover{
+    background-color: var(--hyperiondev-orange);
+    border-color: var(--hyperiondev-orange);
+}
+
+.btn-tht:active{
+    background-color: var(--hyperiondev-orange);
+    border-color: var(--hyperiondev-orange);
+}
+
+.btn-tht_t{
+    background-color: var(--hyperiondev-orange);
+    border-color: var(--hyperiondev-orange);
+}
+
+.btn-tht_t:hover{
+    background-color: transparent;
+    color: var(--hyperiondev-orange);
+    border-color: var(--hyperiondev-orange);
+}
+
+@media (max-width: 576px) {
+    .img-sm {
+      max-width: 100px; 
+    }
+  }
+
+.title-fs {
+    color: var(--hyperiondev-orange);
+    font-family: 'Avenir-Next', sans-serif;
+    font-weight: 600;
+    font-size: clamp(1rem, 0.923rem + 0.323vw, 1.125rem);
+}
+  
+.title-gm {
+    color: #000;
+    font-family: 'Avenir-Next', sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.722rem + 0.645vw, 1.125rem);
+}
+
+.profile-pic {
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 0px;
+}
+  
+.nav-link {
+    color: #000;
+    border: 0px;
+    font-family: 'Avenir-Next', sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.75rem, 0.597rem + 0.645vw, 1rem) !important;
+}
+
+.navbar-nav li.nav-item {
+    white-space: nowrap;
+}
+
+.navbar-toggler:focus {
+    border: 0px;
+    color: #f0f0f0;
+}
+
+.navbar-flyout {
+    position: relative;
+}
+
+.navbar-flyout .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    
+    padding: 5px;
+    min-width: 10rem;
+}
+
+.dropdown-no-arrow::after {
+    display: none !important;
+} 
+
+.dropdown-no-arrow:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    border: none;
+    border-radius: 0%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #333;
+    font-family: 'Avenir-Next', sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.722rem + 0.645vw, 1.125rem) !important;
+}
+
+
+.dropdown-item:hover {
+    background-color: var(--hyperiondev-orange);
+}
+
+.card-shadow {
+    box-shadow: 0 4px 6px  rgba(0, 0, 0, 0.1);
+    border: 0px;
+}
+
+.border-box2 {
+    border: 0px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.border-box {
+    border: 0px solid rgba(255, 255, 255, 0.089);
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.my-hr {
+    border: none; /* Remove the default border */
+    height: 2px; /* Set the height of the horizontal rule */
+    background-color: #bdbdbd; /* Set the color of the horizontal rule */
+    margin: 50px 0; /* Add some spacing around the horizontal rule */
+}
+
+.align-middle {
+    display: flex;
+    align-items: center;
+}
+
+.hyperion {
+    color: var(--hyperiondev-orange);
+    font-family: 'Avenir-Next', sans-serif;
+}
+
+.hyperion_text {
+    color: var(--hyperiondev-text_dark_grey);
+    font-family: 'Avenir-Next', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.bi{
+    font-size: large;
+}
+
+.full-height-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/LandingPage_banner.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+  }
+.full-width-section {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+  }
+
+/* Nilo */
